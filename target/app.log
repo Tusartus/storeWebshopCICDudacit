@@ -3361,3 +3361,34 @@ insert into user (id, cart_id, password, username) values (null, ?, ?, ?) [23505
 
 2021-09-02 14:21:57.810  INFO 16256 --- [http-nio-8084-exec-6] UserController                           : action=CreateUserStart userName=test22
 2021-09-02 14:21:58.019  INFO 16256 --- [http-nio-8084-exec-6] UserController                           : action=CreateUserComplete userName=test22
+2021-09-02 14:38:33.211  INFO 3188 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on LAPTOP-4OB0D91T with PID 3188 (C:\Users\arthu\Desktop\springwithmyprojectlive\udacitynanodegreecoding\proj4\nd035-c4-Security-and-DevOps\starter_code\target\classes started by arthu in C:\Users\arthu\Desktop\springwithmyprojectlive\udacitynanodegreecoding\proj4\nd035-c4-Security-and-DevOps\starter_code)
+2021-09-02 14:38:33.223  INFO 3188 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2021-09-02 14:38:44.102  INFO 3188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-09-02 14:38:44.592  INFO 3188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 425ms. Found 4 repository interfaces.
+2021-09-02 14:38:49.902  INFO 3188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11634ae0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-02 14:38:57.195  INFO 3188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2021-09-02 14:38:57.569  INFO 3188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-02 14:38:57.575  INFO 3188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-09-02 14:39:01.689  INFO 3188 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-02 14:39:01.690  INFO 3188 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 27638 ms
+2021-09-02 14:39:04.190  INFO 3188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-02 14:39:06.350  INFO 3188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-02 14:39:06.765  INFO 3188 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-09-02 14:39:07.424  INFO 3188 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-09-02 14:39:07.459  INFO 3188 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-09-02 14:39:08.699  INFO 3188 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-09-02 14:39:09.952  INFO 3188 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-09-02 14:39:17.497  INFO 3188 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-02 14:39:34.580  WARN 3188 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-02 14:39:35.524  INFO 3188 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74707df8, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c16677c, org.springframework.security.web.header.HeaderWriterFilter@49e479da, org.springframework.web.filter.CorsFilter@12c76d6e, org.springframework.security.web.authentication.logout.LogoutFilter@6ad6ae45, com.example.demo.security.JWTAuthenticationFilter@46702c26, com.example.demo.security.JWTAuthenticationVerificationFilter@7956f93a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fd751de, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6bd7439d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e3ed455, org.springframework.security.web.session.SessionManagementFilter@30dd00b6, org.springframework.security.web.access.ExceptionTranslationFilter@25470477, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21f50d2c]
+2021-09-02 14:39:38.381  INFO 3188 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-02 14:39:43.890  INFO 3188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+2021-09-02 14:39:43.925  INFO 3188 --- [main] com.example.demo.SareetaApplication      : Started SareetaApplication in 73.728 seconds (JVM running for 77.011)
+2021-09-02 14:40:06.550  INFO 3188 --- [http-nio-8084-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-02 14:40:06.552  INFO 3188 --- [http-nio-8084-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-02 14:40:06.589  INFO 3188 --- [http-nio-8084-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 29 ms
+2021-09-02 14:40:07.196  INFO 3188 --- [http-nio-8084-exec-10] UserController                           : action=CreateUserStart userName=test
+2021-09-02 14:40:07.749  INFO 3188 --- [http-nio-8084-exec-10] UserController                           : action=CreateUserComplete userName=test
+2021-09-02 14:40:24.381  INFO 3188 --- [http-nio-8084-exec-8] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory

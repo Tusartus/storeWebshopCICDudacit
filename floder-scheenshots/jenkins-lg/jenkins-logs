@@ -1,0 +1,25 @@
+Started by user Arthus Nizere
+Running as SYSTEM
+Building in workspace C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\storeProject
+The recommended git tool is: NONE
+using credential global
+Cloning the remote Git repository
+Cloning repository https://github.com/Tusartus/storeWebshopCICDudacit.git
+ > git.exe init C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\storeProject # timeout=10
+Fetching upstream changes from https://github.com/Tusartus/storeWebshopCICDudacit.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.30.0.windows.1'
+using GIT_ASKPASS to set credentials for all
+ > git.exe fetch --tags --force --progress -- https://github.com/Tusartus/storeWebshopCICDudacit.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/Tusartus/storeWebshopCICDudacit.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision 48bbd13241ee0ac221e18d017abde13566c42ab2 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 48bbd13241ee0ac221e18d017abde13566c42ab2 # timeout=10
+Commit message: "adde 401 response login"
+First time build. Skipping changelog.
+[storeProject] $ cmd.exe /C "mvn -f starter_code/pom.xml Package && exit %%ERRORLEVEL%%"
+POM file "starter_code/pom.xml" specified the -f/--file command-line argument does not exist
+Build step 'Invoke top-level Maven targets' marked build as failure
